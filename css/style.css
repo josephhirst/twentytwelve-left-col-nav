@@ -1,0 +1,245 @@
+/*
+ Theme Name:   Twenty Twelve Child
+ Theme URI:    
+ Description:  Twenty Twelve Child Theme
+ Author:       Joe Hirst
+ Author URI:   http://joe-hirst.com
+ Template:     twentytwelve
+ Version:      0.2.0
+ Tags:         light, dark, two-columns, left-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-twelve-child
+*/
+
+@import url("../twentytwelve/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+
+/* ---- SITE LOGO / HEADER ----*/
+.site-header {
+	padding: 24px 0px 0px;
+	padding: 1.71428571rem 0rem 0rem;
+}
+.site-header h1 a, .site-header h2 a {
+	color: #026302;
+}
+
+.site-header h1 a:hover, .site-header h2 a:hover {
+	color: #026302;
+	opacity: 0.8;
+}
+
+h2.site-description {
+	color: #026302;
+}
+
+img.header-image {
+	box-shadow: none;
+}
+
+.header-image {
+	margin-top: 0px;
+	margin-top: 0rem;
+	margin-bottom: 20px;
+	margin-bottom: 1.42857143rem;
+	padding: none;
+}
+
+/* ---- BREADCRUMBS ---- */
+div.breadcrumbs {
+	display: block;
+	float: left;
+	padding: 20px 20px 20px 0px;
+	padding: 1.42857143rem 1.42857143rem 1.42857143rem 0rem;
+}
+
+/* ---- BASIC PAGE LINK STYLES ---- */
+a {
+	color: #000000;
+}
+
+a:hover {
+	color: #026302;
+}
+
+.entry-meta a:hover {
+	color: #026302;  /* ---- Fixes admin meta edit colors ---- */
+}
+
+/*---- MOVE SIDEBAR TO LEFT ----*/
+div.nav-menu{
+	display: none; /* ---- Hides horizontal nav ---- */
+}
+
+@media screen and (min-width: 600px) {
+    .site-content {
+        float: right;
+    }
+    .widget-area {
+        float: left;
+    }
+}
+
+/* ---- IE8 and IE7 ---- */
+.ie .site-content {
+    float: right;
+}
+.ie .widget-area {
+    float: left;
+}
+/*---- ENDS SIDEBAR MOVEMENT ---- */
+
+/* ---- CUSTOM WIDGET STYLES ---- */
+.widget-area .widget h3 {
+	font-size: 22px;
+	font-size: 1.57142857rem;
+	color: #026302;
+	line-height: 32px;
+	line-height: 2.28571429rem;
+	margin-bottom: 3px;
+	margin-bottom: 0.21428571rem;
+}
+
+.widget img {
+	box-shadow: none; /* ---- Remove box shadow and align images in carrier widget ---- */
+	padding: 14px;
+	padding: 1rem;
+}
+
+p.testimonial_content {
+
+}
+/* ---- CARRIER LOGO STYLES ---- */
+/* ============================= */
+
+
+/* ---- POST IMAGE STYLES ---- */
+.entry-content img {
+	box-shadow: none; /* ---- Removes twentytwelve box shadow from posted images ---- */
+}
+
+/* ---- SOCIAL LINKS ---- */
+.social-links img {
+	display: inline;
+	max-width: 200px;
+	max-height: 46px;
+	padding: 0px 11px 0px 0px;
+	padding: 0rem 0.78571429rem 0rem 0rem;
+}
+
+.social-links a {
+	text-decoration: none;
+}
+
+/* ---- FEMA IMG LINKS ---- */
+.fema-links img {
+	display: inline;
+	width: 200px;
+	height: 65px;
+	padding: 0px 4px 0px 0px;
+	padding: 0rem 0.28571429rem 0rem 0rem;
+}
+
+.fema-links a {
+	text-decoration: none; /* ---- Removes text decoration causing underline ---- */
+}
+
+/* ---- FOOTER CUSTOM STYLES ---- */
+footer[role="contentinfo"] a:hover {
+	color: #026302;
+}
+
+div.site-info {
+	font-weight: bold;
+	margin-left: 15%;
+	margin-right: 15%;
+	text-align: center;
+}
+
+div.site-info span {
+	margin-left: 2%;
+}
+
+/* ---- BUTTONS ---- */
+.menu-toggle,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+article.post-password-required input[type=submit],
+.bypostauthor cite span {
+	padding: 6px 10px;
+	padding: 0.428571429rem 0.714285714rem;
+	font-size: 11px;
+	font-size: 0.785714286rem;
+	line-height: 1.428571429;
+	font-weight: normal;
+	color: #FFFFFF;
+	background-color: #078407;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top, #026302, #078407);
+	background-image: -ms-linear-gradient(top, #026302, #078407);
+	background-image: -webkit-linear-gradient(top, #026302, #078407);
+	background-image: -o-linear-gradient(top, #026302, #078407);
+	background-image: linear-gradient(top, #026302, #078407);
+	border: 1px solid #d2d2d2;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1);
+}
+.menu-toggle,
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+	cursor: pointer;
+}
+button[disabled],
+input[disabled] {
+	cursor: default;
+}
+.menu-toggle:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+article.post-password-required input[type=submit]:hover {
+	color: #FFFFFF;
+	background-color: #026302;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top, #026302, #026302);
+	background-image: -ms-linear-gradient(top, #026302, #026302);
+	background-image: -webkit-linear-gradient(top, #026302, #026302);
+	background-image: -o-linear-gradient(top, #026302, #026302);
+	background-image: linear-gradient(top, #026302, #026302);
+}
+.menu-toggle:active,
+.menu-toggle.toggled-on,
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {
+	color: #FFFFFF;
+	background-color: #026302;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top, #026302, #026302);
+	background-image: -ms-linear-gradient(top, #026302, #026302);
+	background-image: -webkit-linear-gradient(top, #026302, #026302);
+	background-image: -o-linear-gradient(top, #026302, #026302);
+	background-image: linear-gradient(top, #026302, #026302);
+	box-shadow: inset 0 0 8px 2px #026302, 0 1px 0 0 #f4f4f4;
+	border-color: transparent;
+}
+.bypostauthor cite span {
+	color: #fff;
+	background-color: #21759b;
+	background-image: none;
+	border: 1px solid #1f6f93;
+	border-radius: 2px;
+	box-shadow: none;
+	padding: 0;
+}
+
+
+
+
+
